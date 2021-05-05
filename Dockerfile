@@ -10,7 +10,9 @@ RUN apt-get update && apt-get upgrade -y && apt install bedtools -y && \
 #    /opt/conda/bin/conda install bedtools -y 
 #RUN python -m pip install bedtools
  
+WORKDIR app
 ADD https://github.com/Genotek/ClassifyCNV/archive/refs/tags/v1.1.0.tar.gz . 
-RUN tar xf v1.1.0.tar.gz && mv /srv/ClassifyCNV-1.1.0/* . && rm -rf /srv/ClassifyCNV-1.1.0
+RUN tar xf v1.1.0.tar.gz && mv ClassifyCNV-1.1.0/* . && rm -rf ClassifyCNV-1.1.0
+ENV PATH=$PATH:/app
 
 CMD ["/bin/bash"]
