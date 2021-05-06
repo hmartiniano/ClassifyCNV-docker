@@ -1,5 +1,5 @@
 # ClassifyCNV-docker
-Dockerfile for ClassifyCNV (https://github.com/GenoTek/ClassifyCNV)[]
+Dockerfile for [ClassifyCNV](https://github.com/GenoTek/ClassifyCNV)
 
 To use with docker:
 
